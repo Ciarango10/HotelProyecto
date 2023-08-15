@@ -1,0 +1,13 @@
+#contenedorPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#contenedorInfo{
+    flex-basis: 50%;
+}
+#contenedorVideo{
+    flex-basis: 50%;
+}
