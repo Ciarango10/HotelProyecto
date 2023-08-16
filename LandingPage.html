@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/stylesheet.css">  
+    <title>Aurora Hotel - Landing Page</title>
+    <link rel="stylesheet" href="css/stylesheet.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <img src="" alt="logo">
-                <li></li> 
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-    </header>
     <main>
+        <section id="contenedorImagen">
+            <h1 id="tituloPrincipal">Hotel Aurora</h1>
+            <img src="img/aurora.jpg" alt="">
+            <div id="flecha">
+                <a href="#contenedorPrincipal">
+                    <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>
+                </a> 
+            </div>
+        </section>
         <section id="contenedorPrincipal">
             <article id="contenedorInfo">
-                <h1>
+                <h2>
                     Tu Refugio Perfecto
-                </h1>
+                </h2>
                 <p>
                     Donde los Sueños se Hacen Realidad
                 </p>
@@ -32,7 +34,9 @@
                 </button>
             </article>
             <article id="contenedorVideo">
-                <video src=""></video>
+                <video width="700" height="470" controls >
+                    <source src="Ciarango.mp4" type="video/mp4">
+                </video>
             </article>
         </section>
     </main>
@@ -40,4 +44,7 @@
 
     </footer>
 </body>
+<script src="https://kit.fontawesome.com/c82bfcd167.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/srollReveal.js"></script>
 </html>
