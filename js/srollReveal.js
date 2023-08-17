@@ -11,3 +11,6 @@ window.sr = ScrollReveal();
     sr.reveal('#flecha', {
         duration: 3000
     });
+    sr.reveal('#carouselExampleCaptions', {
+        duration: 3000
+    });
