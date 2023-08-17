@@ -9,88 +9,100 @@
 body{
     background: linear-gradient(90deg, rgba(44,43,115,1) 0%, rgba(44,51,141,1) 35%, rgba(14,17,50,1) 100%); 
 }
-#contenedorImagen{
+
+    #contenedorImagen{
     width:99.1vw;
     height: 100vh;
     position: relative;
-}
-#contenedorImagen img{
-    width: 100%;
-    height: 100%;
-}
-#contenedorImagen h1{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 10%;
-    font-size: 90px;
-    font-weight: bold;
-    font-family: 'Rubik', sans-serif;
-    color:#fefefe;
-}
-#contenedorImagen #flecha{
-    position:absolute;
-    bottom: 90px;
-    left: 50%;
-    width: 43px;
-    height: 43px;
-    border-radius: 21px;
-    border: 3px solid #fff;
-    animation: rebote 2000ms infinite ease-in;
-    cursor: pointer;
-}
-#contenedorImagen #flecha i{
-    text-align: center;
-    font-size: 30px;
-    padding: 3px 7px;
-}
-#contenedorPrincipal{
-    margin: 241px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-#contenedorInfo{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    justify-content: center;
-    align-items: center;
-}   
-    #contenedorInfo h2{
-        font-size: 65px;
-        margin:0px;
+    }
+    #contenedorImagen img{
+        width: 100%;
+        height: 100%;
+    }
+    #contenedorImagen h1{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 10%;
+        font-size: 90px;
         font-weight: bold;
+        font-family: 'Rubik', sans-serif;
+        color:#fefefe;
+ 
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
-    #contenedorInfo p{
-        margin-top:10px;
+    #contenedorImagen #flecha{
+        position:absolute;
+        bottom: 90px;
+        left: 50%;
+        width: 43px;
+        height: 43px;
+        border-radius: 21px;
+        border: 3px solid #fff;
+        animation: rebote 2000ms infinite ease-in;
+        cursor: pointer;
+    }
+    #contenedorImagen #flecha i{
+        text-align: center;
         font-size: 30px;
-        opacity: 0.8;
-        text-align: left;
+        padding: 3px 7px;
     }
-    #contenedorInfo button{
-        background: linear-gradient(45deg, rgb(106, 120, 209), rgb(0, 164, 189)); 
-        border: none;
-        height: 55px;
-        width:170px;
-        border-radius: 30px;
-        margin-top:30px;
-        transition: all 500ms ease-in;
-        cursor:pointer;
+    #contenedorPrincipal{
+        margin: 241px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
     }
-    #contenedorInfo button:hover{  
-        transform: scale(1.1);
-        animation: cambioColor 4000ms infinite ease-in;
+    #contenedorInfo{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }   
+        #contenedorInfo h2{
+            font-size: 65px;
+            margin:0px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #contenedorInfo p{
+            margin-top:10px;
+            font-size: 30px;
+            opacity: 0.8;
+            text-align: center;
+        }
+        #contenedorInfo button{
+            background: linear-gradient(45deg, rgb(106, 120, 209), rgb(0, 164, 189)); 
+            border: none;
+            height: 55px;
+            width:170px;
+            border-radius: 30px;
+            margin-top:30px;
+            transition: all 500ms ease-in;
+            cursor:pointer;
+        }
+        #contenedorInfo button:hover{  
+            transform: scale(1.1);
+            animation: cambioColor 4000ms infinite ease-in;
+        }
+        #contenedorInfo button a{
+            text-decoration: none;
+            font-size:20px;
+        }
+    #contenedorVideo{
+        flex-basis: 50%;
     }
-    #contenedorInfo button a{
-        text-decoration: none;
-        font-size:20px;
+    #video{
+        width:95%;
+        padding:5px;
+        max-height:500px;
     }
-#contenedorVideo{
-    flex-basis: 50%;
-}
+
+
 @keyframes cambioColor {
     0%, 100% {
       background:#904399;
