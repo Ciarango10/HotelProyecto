@@ -17,6 +17,7 @@
 #crearCuenta,#iniciarSesion{
     color: #367EBC;
     border: 1px solid #367EBC;
+    transition: all 500ms;
 }
 #crearCuenta:hover,#iniciarSesion:hover{
     background-color: #367EBC;
@@ -28,6 +29,7 @@
 }
 #login{
     transition: all 500ms;
+    color: white;
 }
 #login:hover{
     text-decoration: underline;
