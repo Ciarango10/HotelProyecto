@@ -14,3 +14,20 @@ window.sr = ScrollReveal();
     sr.reveal('#carouselExampleCaptions', {
         duration: 3000
     });
+    sr.reveal('#ola', {
+        duration: 3000,
+        origin: 'right',
+        distance:'-100px'
+    });
+    sr.reveal('#picos', {
+        duration: 3000,
+        origin: 'top',
+        distance:'-100px'
+    });
+    sr.reveal('#contenedorLogin', {
+        duration: 3000
+    });
+    sr.reveal('#contenedorDiseno', {
+        duration: 3000
+    });
+
