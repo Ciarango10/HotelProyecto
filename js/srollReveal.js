@@ -27,7 +27,14 @@ window.sr = ScrollReveal();
     sr.reveal('#contenedorLogin', {
         duration: 3000
     });
-    sr.reveal('#contenedorDiseno', {
-        duration: 3000
+    sr.reveal('#contenedorVision', {
+        duration: 3000,
+        origin: 'right',
+        distance:'-100px'
+    });
+    sr.reveal('#contenedorMision', {
+        duration: 3000,
+        origin: 'left',
+        distance:'-100px'
     });
 

@@ -6,8 +6,15 @@
     font-family: 'Fira Sans', sans-serif;
     scroll-behavior: smooth;
 }
-
 /*ESTILOS HOME PAGE-----------------------------------------------------------------------------------------*/
+body{
+    visibility: hidden;
+}
+#headerHome{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 #formularioHeader button{
     margin:0px 5px;
 }
@@ -33,7 +40,83 @@
 #crearCuenta a:hover, #iniciarSesion a:hover{
     color: white;
 }
-
+#contenedorNosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#contenedorNosotros > * {
+    padding: 20px;
+}
+#contenedorNosotros > * > * > * > *{
+    color: black;
+    text-align: center;
+}
+#contenedorNosotros div div p {
+    text-align: left;
+}
+#contenedorMision, #contenedorVision {
+    display: flex;
+    flex-basis:100%;
+    flex-direction: column;
+    justify-content: center;
+}
+#contenedorMision > *, #contenedorVision > * {
+    width:60%;
+    padding: 30px;
+    font-size:1.3rem;
+}
+#contenedorMision div h2, #contenedorVision div h2 {
+    font-size:3rem;
+    font-weight: bold;
+}
+#contenedorMision {
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+#contenedorVision{
+    align-items: flex-end;
+    background-color: #337CBB;
+    padding-top: 50px;
+}
+#contenedorVision div > * {
+    color: white;
+}
+.containerImagen {
+    width: 100%;
+    text-align: center;
+}
+.containerImagen img {
+    width: 50%;
+}
+@media (max-width:1000px) {
+    #contenedorMision:first-child > div, .contenedorInfoVision{
+        width: 100% !important;
+        display: flex;
+    }
+    .contenedorInfoVision {
+        flex-direction: row-reverse;
+    }
+    .contenedorInfo, .containerImagen {
+        width: 50%;
+    }
+    .containerImagen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containerImagen img {
+        width: 100%;
+    }
+}
+@media (max-width:700px) {
+    .containerImagen {
+        display: none;
+    }
+    .contenedorInfo {
+        width: 100%;
+    }
+}
 /*ESTILOS LANDING PAGE--------------------------------------------------------------------------------------*/
 #barraNavegacion{
      background-image: linear-gradient(180deg,#337CBB, rgba(51, 124, 187, 78%));
@@ -111,6 +194,7 @@
 /*ESTILOS LOGIN PAGE--------------------------------------------------------------------------------------*/
 section {
     display: flex;
+    min-height: 100vh;
     max-height: 100vh;
 }
 #contenedorDiseno {
@@ -207,6 +291,19 @@ h1 {
     margin-top: 70px;
     cursor: pointer;
     font-weight: bold;
+}
+@media (max-width:1400px) {
+    #picos{
+        display: none;
+    }
+}
+@media (max-width:900px) {
+    #contenedorDiseno{
+        display: none;
+    }
+    #contenedorLogin {
+        flex-basis: 100%;
+    }
 }
 
 
