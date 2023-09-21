@@ -37,4 +37,7 @@ window.sr = ScrollReveal();
         origin: 'left',
         distance:'-100px'
     });
+    sr.reveal('#contenido1', {
+        duration: 3000
+    });
 
