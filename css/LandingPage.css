@@ -82,4 +82,7 @@ body{
    #contenedorInfo {
       flex-basis: 100%;
    }
+   #video {
+      margin-top:40px;
+   }
 }
