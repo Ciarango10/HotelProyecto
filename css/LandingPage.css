@@ -83,6 +83,7 @@ body{
       flex-basis: 100%;
    }
    #video {
-      margin-top:40px;
+      margin: 40px 20px 0px;
+      width: 93%;
    }
 }
